@@ -50,6 +50,8 @@ class WP_Widget_Search extends WP_Widget {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 
+		//can use the new widget stuff here - see if it works ******
+
 		// Use current theme search form if it exists.
 		get_search_form();
 

@@ -559,6 +559,20 @@ function twentyseventeen_header_image_tag( $html, $header, $attr ) {
 	}
 	return $html;
 }
+
+/* My function to modify the main query object
+function my_modify_main_query( $query ) {
+	if ( $query->is_home() && $query->is_main_query() ) { // Run only on the homepage
+	$query->query_vars[‘other’] = -2; // exclude this category from the homepage search because it's ony for adverts and not other information
+	$query->query_vars[‘posts_per_page’] = 10; // Show only 10 posts on the homepage only
+	}
+	}
+	// Hook my above function to the pre_get_posts action
+	//add_action( ‘pre_get_posts’, ‘my_modify_main_query’ );
+	add_action( 'widget_init', ‘my_modify_main_query’ );*/
+
+
+
 add_filter( 'get_header_image_tag', 'twentyseventeen_header_image_tag', 10, 3 );
 
 /**

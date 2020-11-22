@@ -45,6 +45,8 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 			$args['widget_id'] = $this->id;
 		}
 
+		//try here too *****
+
 		$default_title = __( 'Recent Posts' );
 		$title         = ( ! empty( $instance['title'] ) ) ? $instance['title'] : $default_title;
 
